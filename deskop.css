@@ -1,0 +1,42 @@
+@media screen and (min-width: 600px) {
+    body{
+        
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        
+        
+    }
+    header {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    main{
+        flex-direction: row;
+    }
+    footer{
+        flex-direction: row;
+    }
+    .texto{
+        width: 40%;
+        font-weight: bold;
+    }
+    header.logo{
+        order: 2;
+    }
+    header.navIzquierda{
+        order: 1;
+    }
+    header.navDerecha{
+        order: 3;
+    }
+
+    
+}
